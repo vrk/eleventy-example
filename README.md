@@ -26,4 +26,5 @@ Now the final site will be in `_site`
   - ...but this `README` file is included in `.eleventyignore`, so it won't be included in the site output directory despite having a `.md` extension: [ignore files](https://www.11ty.dev/docs/ignores/)
 - Eleventy will put the generated assets into `_site` by default: [output dir](https://www.11ty.dev/docs/config/#output-directory)
 - Eleventy will search for templates in `_includes` by default: [includes dir](https://www.11ty.dev/docs/config/#directory-for-includes)
+- The templates I used also take advantage of [layout chaining](https://www.11ty.dev/docs/layout-chaining/)
 - `.eleventy.js` is the Eleventy config file, which, because I'm using the above defaults, just needs to tell Eleventy to do a passthrough copy of the `css/` directory: [passthrough file copy](https://www.11ty.dev/docs/copy/)
