@@ -22,7 +22,7 @@ Now the final site will be in `_site`
 ## Documentation
 
 ### How this works in general
-- The `package.json` file installs eleventy as a dev dependency, and then runs `eleventy --serve` for the `npm start` command
+- The `package.json` file specifies eleventy as a dev dependency. `eleventy --serve` is defined as the `npm start` command.
 - When Eleventy runs, it will scan for `.md` files, translate the `.md` files into HTML, and will put the HTML into a `_site` output directory.
 - The `.md` files all have Markdown frontmatter (the YAML key-value pairs in-between the `---`) that specify further how it should be converted into HTML
   - `layout:` is a special Eleventy variable that refers to what template to use in `_includes`
