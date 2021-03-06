@@ -26,7 +26,7 @@ Now the final site will be in `_site`
 - When Eleventy runs, it will scan for `.md` files, translate the `.md` files into HTML, and will put the HTML into a `_site` output directory.
 - The `.md` files all have Markdown frontmatter (the YAML key-value pairs in-between the `---`) that specify further how it should be converted into HTML
   - `layout:` is a special Eleventy variable that refers to what template to use in `_includes`
-  -  You can define other variables yourself then use them in templates, see e.g. `title` in the `.md` files and how it's referenced in template `.njk` fiels
+  -  You can define your own variables then use them in templates, see e.g. `title` in the `.md` files and how it's referenced in template `.njk` fiels
   - After the frontmatter is the contents of the page.
 - The templates are in `_includes`, and they are HTML with variables that look like this: `{{ variableName }}`. Eleventy will use the template referenced by the frontmatter and fill in the values for the variables as part of the translation from Markdown to HTML.
   - `{{ content }}` is a special variable that references the contents of the page.
