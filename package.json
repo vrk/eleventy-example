@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy",
-    "clean": "rm -rf ./public"
+    "build": "eleventy"
   },
   "repository": {
     "type": "git",
