@@ -19,9 +19,9 @@ $ npm run build
 
 Now the final site will be in `_site`
 
-## Docs: Key things to knw
+## Documentation
 
-### Generally how this works
+### How this works in general
 - Eleventy will automatically scan for `.md` files, will translate it into HTML, and will put the HTML into a `_site` output directory.
 - The `.md` files all have Markdown frontmatter (the YAML key-value pairs in-between the `---`):
   - `layout:` is a special Eleventy variable that refers to what template to use in `_includes`
@@ -31,7 +31,7 @@ Now the final site will be in `_site`
   - `{{ content }}` is a special variable that references the contents of the page - the examples also use the [`safe` filter](https://mozilla.github.io/nunjucks/templating.html#safe), so it looks like `{{ content | safe }}`
   - Other freeform template variables are defined in frontmatter
 
-### Other details
+### Details
 - This uses the Nunjucks (.njk) templating system, which doesn't need to be configured because Eleventy will automatically scan for and process all files with these extensions by default: [template formats](https://www.11ty.dev/docs/config/#template-formats)
   - `.md` is also included by default
   - ...but this `README` file is included in `.eleventyignore`, so it won't be included in the site output directory despite having a `.md` extension: [ignore files](https://www.11ty.dev/docs/ignores/)
