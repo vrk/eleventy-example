@@ -1,0 +1,22 @@
+{
+  "name": "eleventy-example",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "clean": "rm -rf ./public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vrk/eleventy-example.git"
+  },
+  "author": "vrk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vrk/eleventy-example/issues"
+  },
+  "homepage": "https://github.com/vrk/eleventy-example#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1"
+  }
+}
