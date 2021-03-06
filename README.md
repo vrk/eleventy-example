@@ -41,3 +41,9 @@ Now the final site will be in `_site`
 - Eleventy will search for templates in `_includes` by default: [includes dir](https://www.11ty.dev/docs/config/#directory-for-includes)
 - The templates I used also take advantage of [layout chaining](https://www.11ty.dev/docs/layout-chaining/)
 - `.eleventy.js` is the Eleventy config file, which, because I'm using the above defaults, just needs to tell Eleventy to do a passthrough copy of the `css/` directory: [passthrough file copy](https://www.11ty.dev/docs/copy/)
+
+### Aside: An odd style choice
+
+It'd be neater/better if I created a separate `src` directory where I put the (non-README) `.md` files and `css/` directories. But that involved slightly more config, so I thought it'd be ever-so-slightly easier understand if I forwent a `src` directory.
+
+If this decision bugs you, add a `src` directory for practice! 😄
