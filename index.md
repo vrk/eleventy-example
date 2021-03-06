@@ -9,5 +9,3 @@ This is the home page of the example!
 
 - [a little more on templates](fyi-templates)
 - [a little more on config](about-config)
-
-Let's try out continuous deploy 💖
