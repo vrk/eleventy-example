@@ -22,17 +22,19 @@ Now the final site will be in `_site`
 ## Documentation
 
 ### How this works in general
-- Eleventy will automatically scan for `.md` files, will translate it into HTML, and will put the HTML into a `_site` output directory.
-- The `.md` files all have Markdown frontmatter (the YAML key-value pairs in-between the `---`):
+- The `package.json` file installs eleventy as a dev dependency, and then runs `eleventy --serve` for the `npm start` command
+- When Eleventy runs, it will scan for `.md` files, translate the `.md` files into HTML, and will put the HTML into a `_site` output directory.
+- The `.md` files all have Markdown frontmatter (the YAML key-value pairs in-between the `---`) that specify further how it should be converted into HTML
   - `layout:` is a special Eleventy variable that refers to what template to use in `_includes`
   -  You can define other variables yourself then use them in templates, see e.g. `title` in the `.md` files and how it's referenced in template `.njk` fiels
   - After the frontmatter is the contents of the page.
-- The templates are in `_includes`, and they are HTML with variables that look like this: `{{ variableName }}`
-  - `{{ content }}` is a special variable that references the contents of the page - the examples also use the [`safe` filter](https://mozilla.github.io/nunjucks/templating.html#safe), so it looks like `{{ content | safe }}`
+- The templates are in `_includes`, and they are HTML with variables that look like this: `{{ variableName }}`. Eleventy will use the template referenced by the frontmatter and fill in the values for the variables as part of the translation from Markdown to HTML.
+  - `{{ content }}` is a special variable that references the contents of the page.
+    - The examples also use the [`safe` filter](https://mozilla.github.io/nunjucks/templating.html#safe), so it looks like `{{ content | safe }}`
   - Other freeform template variables are defined in frontmatter
 
 ### Details
-- This uses the Nunjucks (.njk) templating system, which doesn't need to be configured because Eleventy will automatically scan for and process all files with these extensions by default: [template formats](https://www.11ty.dev/docs/config/#template-formats)
+- This uses the Nunjucks (.njk) templating system, which doesn't need to be specified in configs because Eleventy will automatically scan for and process all files with these extensions by default: [template formats](https://www.11ty.dev/docs/config/#template-formats)
   - `.md` is also included by default
   - ...but this `README` file is included in `.eleventyignore`, so it won't be included in the site output directory despite having a `.md` extension: [ignore files](https://www.11ty.dev/docs/ignores/)
 - Eleventy will put the generated assets into `_site` by default: [output dir](https://www.11ty.dev/docs/config/#output-directory)
