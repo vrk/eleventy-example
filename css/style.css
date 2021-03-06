@@ -1,0 +1,38 @@
+html {
+  background-color: white;
+  color: #202124;
+  font-family: "Noto Serif KR", serif;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 2em;
+  max-width: 700px;
+  text-underline-position: under;
+}
+
+a {
+  color: #bc5090;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+footer {
+  margin-top: 2em;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+hr {
+  border-color: gainsboro;
+  border-style: solid;
+  border-top: 0;
+}
+
+ul {
+  list-style-type: square;
+}
