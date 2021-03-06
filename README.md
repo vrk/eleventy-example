@@ -4,6 +4,8 @@ This is an example of a very simple [eleventy](https://www.11ty.dev/) site.
 
 ## To install and run locally
 
+Clone the repo locally and then run:
+
 ```
 $ npm install
 $ npm start
