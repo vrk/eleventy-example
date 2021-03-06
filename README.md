@@ -14,7 +14,7 @@ This will launch the eleventy watcher with hot-reloading so that you can live pr
 ## To generate the site
 
 ```
-$ npm build
+$ npm run build
 ```
 
 Now the final site will be in `_site`
